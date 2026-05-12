@@ -1,10 +1,11 @@
 # PHP version list plugin for DA
 
-This is a plugin written for DirectAdmin to list all the used PHP versions by the users.  
-The interface is using Bootstrap.
+This is a plugin originally written by RealityHost for DirectAdmin to list all the used PHP versions by the users.
 
 It will show a summary of the used PHP version by # of domains.  
 And a detailed overview of which PHP version(s) are used per domain.
+
+This version is an update that shows up to 9 PHP versions with a little interface refactoring.
 
 ## Requirements
 
@@ -18,7 +19,7 @@ And a detailed overview of which PHP version(s) are used per domain.
 ## Installation
 
 Log in as an admin on DirectAdmin and go to the Plugin Manager page.  
-Click the add button and paste the url of the plugin package: https://wavoe.bitbucket.io/phpversionlist/phpversionlist.tar.gz  
+Click the add button and paste the url of the plugin package: https://raw.githubusercontent.com/Tafaz/DA-phpversionlist/main/DA-phpversionlist.tar.gz
 Fill the other needed fields and choose if you want to install directly after uploading.
 
 ## HTTPSocket
@@ -53,5 +54,5 @@ Line separator of each file in the scripts directory should be LF before creatin
 
 ```
 > project root folder
-> tar czvf phpversionlist.tar.gz --exclude='.idea' --exclude='.git' --exclude='phpversionlist.tar.gz' *
+> tar czvf DA-phpversionlist.tar.gz --exclude='.git' --exclude='DA-phpversionlist.tar.gz' *
 ```
