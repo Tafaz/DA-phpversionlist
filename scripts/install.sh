@@ -2,11 +2,11 @@
 
 echo "Plugin Installed!";
 
-cd $DOCUMENT_ROOT; //this directory
+cd $DOCUMENT_ROOT;
 cd ../..
-chown -R diradmin:diradmin phpversionlist
+chown -R diradmin:diradmin DA-phpversionlist
 
-cd phpversionlist
+cd DA-phpversionlist
 chmod -R 755 *
 
 exit 0;
