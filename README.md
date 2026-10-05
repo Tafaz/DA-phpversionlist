@@ -14,7 +14,7 @@ This version is an update that shows up to 9 PHP versions with a little interfac
 * PHP 7.4 and up
 * Custombuild 2.0 (for the different PHP versions installation)
 * Minimum 2 different installed PHP versions (else this plugin is not useful for you)
-* Maximum 4 different installed PHP versions (via Custombuild 2.0)
+* Maximum 9 different installed PHP versions (via Custombuild 2.0)
 
 ## Installation
 
