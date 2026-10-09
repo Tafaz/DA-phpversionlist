@@ -38,7 +38,7 @@ function colorize($version)
 
         if (preg_match('/^' . $supportedVersion['branch'] . '/', $version)) {
             $color = ($supportedVersion['status'] === 'security') ? '#f93' : 'black';
-            $color = ($supportedVersion['status'] === 'stable') ? '#9c9' : $color;
+            $color = ($supportedVersion['status'] === 'stable') ? '#149063' : $color;
 
             $colorized = '<span style="font-weight: bold; color: ' . $color . '">' . $version . '</span>';
             break;
@@ -78,6 +78,11 @@ $systemInfo['php']  = colorize($systemInfo['php']);
 $systemInfo['php2'] = colorize(isset($systemInfo['php2']) ? $systemInfo['php2'] : '');
 $systemInfo['php3'] = colorize(isset($systemInfo['php3']) ? $systemInfo['php3'] : '');
 $systemInfo['php4'] = colorize(isset($systemInfo['php4']) ? $systemInfo['php4'] : '');
+$systemInfo['php5'] = colorize(isset($systemInfo['php5']) ? $systemInfo['php5'] : '');
+$systemInfo['php6'] = colorize(isset($systemInfo['php6']) ? $systemInfo['php6'] : '');
+$systemInfo['php7'] = colorize(isset($systemInfo['php7']) ? $systemInfo['php7'] : '');
+$systemInfo['php8'] = colorize(isset($systemInfo['php8']) ? $systemInfo['php8'] : '');
+$systemInfo['php9'] = colorize(isset($systemInfo['php9']) ? $systemInfo['php9'] : '');
 //TODO: activate once you don't support PHP 5 anymore!
 //$systemInfo['php2'] = colorize($systemInfo['php2'] ?? '');
 //$systemInfo['php3'] = colorize($systemInfo['php3'] ?? '');
